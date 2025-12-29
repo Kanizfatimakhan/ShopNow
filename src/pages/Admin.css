@@ -1,0 +1,63 @@
+/* Admin.css - using Bootstrap */
+
+/* Products Tab - Cyan */
+/* Products Tab - Cyan/Dark */
+.nav-pills .nav-link.active.tab-products {
+    background-color: var(--accent-primary) !important;
+    color: #fff !important;
+    /* White text for Light Mode (Dark Bg) */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Orders Tab - Purple */
+.nav-pills .nav-link.active.tab-orders {
+    background-color: #6f42c1 !important;
+    /* Bootstrap Purple for Light Mode */
+    color: #fff !important;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Overrides */
+[data-theme='dark'] .nav-pills .nav-link.active.tab-products {
+    color: #000 !important;
+    /* Black text for Neon Bg */
+    box-shadow: 0 0 15px var(--accent-primary);
+}
+
+[data-theme='dark'] .nav-pills .nav-link.active.tab-orders {
+    background-color: var(--accent-secondary) !important;
+    box-shadow: 0 0 15px var(--accent-secondary);
+}
+
+/* Hover effects for inactive tabs */
+.nav-pills .nav-link:not(.active):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] .nav-pills .nav-link:not(.active):hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff !important;
+}
+
+/* Adaptive Panel Background (Replaces bg-white) */
+.bg-panel {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+[data-theme='dark'] .bg-panel {
+    background-color: var(--bg-surface) !important;
+    color: var(--text-primary);
+}
+
+/* Secondary Panel Background (Replaces bg-light) */
+.bg-panel-secondary {
+    background-color: #f8f9fa;
+    /* Bootstrap Light */
+    transition: background-color 0.3s ease;
+}
+
+[data-theme='dark'] .bg-panel-secondary {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: var(--text-primary);
+}

@@ -1,0 +1,35 @@
+/* Header.css - Custom overrides only */
+.app-header {
+  background-color: #ffffff;
+  /* Default Light Mode */
+  transition: background-color 0.3s ease;
+}
+
+[data-theme='dark'] .app-header {
+  background-color: var(--bg-surface) !important;
+  /* Force Dark Mode Background */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--text-primary) !important;
+  /* Adapt to theme */
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--text-primary) !important;
+  /* Adapt to theme */
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+}

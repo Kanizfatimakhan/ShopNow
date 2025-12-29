@@ -1,0 +1,100 @@
+/* Home.css - Premium Design */
+
+/* Hero Section */
+.hero-section {
+    background: radial-gradient(circle at center, rgba(20, 20, 35, 0.95), rgba(8, 8, 15, 1));
+    border-radius: var(--bs-border-radius-lg);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--border-color);
+}
+
+.hero-title {
+    color: #ffffff;
+    /* Force white text for dark background */
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    text-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+    /* Slight neon glow */
+}
+
+.hero-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    /* Force light text */
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.hero-image {
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
+}
+
+.floating-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Features */
+.feature-card {
+    background: var(--bg-surface);
+    border: 1px solid transparent;
+    padding: 2.5rem 2rem;
+    border-radius: var(--bs-border-radius);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    background: #fff;
+    border-color: var(--border-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    /* Soft shadow on hover */
+}
+
+/* Clean transparent icon */
+.feature-icon {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    /* align-items: center; */
+    /* Removed as display is no longer flex */
+    /* justify-content: center; */
+    /* Removed as display is no longer flex */
+    /* border-radius: 50%; */
+    /* Removed as background is transparent */
+    margin-bottom: 1.5rem;
+    border: none;
+    color: var(--accent-primary);
+    font-size: 2.5rem;
+    /* Larger icon size since no circle */
+}
+
+/* Section Headings */
+.section-title {
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+}

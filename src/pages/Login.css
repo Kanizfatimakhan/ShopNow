@@ -1,0 +1,51 @@
+/* Login.css - Premium Design */
+
+/* Auth container centering is handled by inline styles in JS, 
+   but we can enforce min-height and background behavior here if needed. 
+*/
+
+/* Specific overrides for Auth Cards */
+.auth-card-body {
+    padding: 3rem !important;
+}
+
+.auth-title {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+}
+
+.auth-subtitle {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+/* Social/Demo Login Buttons */
+.btn-demo-login {
+    border-radius: 50rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+
+/* Divider */
+.auth-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem 0;
+    color: var(--text-secondary);
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.auth-divider span {
+    padding: 0 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
